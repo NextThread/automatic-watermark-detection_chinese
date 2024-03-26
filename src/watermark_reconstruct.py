@@ -246,7 +246,7 @@ def solve_images(J, W_m, alpha, W_init, gamma=1, beta=1, lambda_w=0.005, lambda_
             Ik[i] = x[size:].reshape(m, n, p)
             plt.subplot(3,1,1); plt.imshow(PlotImage(J[i]))
             plt.subplot(3,1,2); plt.imshow(PlotImage(Wk[i]))
-            plt.subplot(3,1,3); plt.imshow(PlotImage(Ik[i]))
+            # plt.subplot(3,1,3); plt.imshow(PlotImage(Ik[i]))
             plt.draw()
             plt.pause(0.001)
             print(i)
